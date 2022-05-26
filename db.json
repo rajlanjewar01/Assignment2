@@ -1,6 +1,29 @@
 {
   "users": [
-    
+    {
+      "name": "steve123",
+      "email": "steve@gmail.com",
+      "phone": 9999999999,
+      "password": "Pass@123",
+      "confirmPassword": "ssddsfasa",
+      "id": 1
+    },
+    {
+      "name": "stevesmith11",
+      "email": "steve@gmail.com",
+      "phone": 121212121212,
+      "password": "Pass@123",
+      "confirmPassword": "sdssdsdsdss",
+      "id": 2
+    },
+    {
+      "name": "josh0032",
+      "email": "j@gmail.com",
+      "phone": 3232223232,
+      "password": "Pass@123",
+      "confirmPassword": "saasdsad",
+      "id": 3
+    }
   ],
   "comments": [
     {

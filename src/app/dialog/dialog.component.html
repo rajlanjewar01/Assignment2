@@ -1,5 +1,5 @@
 <h4>Add Data</h4>
-<form class="example-form" [formGroup]="userFrm" (ngSubmit)="add()">
+<form class="example-form" [formGroup]="userFrm">
     <mat-form-field class="example-full-width">
         <mat-label>Name</mat-label>
         <input matInput formControlName="name" type="text">
@@ -24,5 +24,5 @@
         <mat-label>Confirm Password</mat-label>
         <input matInput formControlName="confirmPassword" type="password">
     </mat-form-field>
-    <button type="submit"  [disabled]="this.userFrm.invalid" class="ui linkedin button">Submit</button>
+    <button type="submit" [disabled]="this.userFrm.invalid" class="ui linkedin button" (click)="postUser()">{{ actionBtn }}</button>
 </form>
