@@ -2,7 +2,7 @@
 <div class="ui container">
     <div class="ui pointing menu">
         <a class="item" routerLink="/">
-           Bank App
+           MyApp
         </a>
         <div class="right menu">
           <a class="item" routerLink="/home" routerLinkActive="active"> 
@@ -17,6 +17,9 @@
           <a class="item" routerLink="/sign-out" routerLinkActive="active">
             Sign Out
           </a>
+          <a class="item" routerLink="/registered-user" routerLinkActive="active">
+           Registered user
+          </a>
           <a class="item"> 
             <button class="ui button primary" (click)="openDialog()">Add User</button>
           </a>
@@ -24,62 +27,8 @@
     </div>
     <div class="ui segment">
         <router-outlet></router-outlet>
-
-
-        <!--list all users-->
-        
-<mat-form-field>
-  <input matInput (keyup)="applyFilter($event)" placeholder="Filter">
-  </mat-form-field>
-  
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-  
-  <!-- ID Column -->
-  <ng-container matColumnDef="id">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
-    <td mat-cell *matCellDef="let row"> {{row.id}} </td>
-  </ng-container>
-  
-  <!-- Home Column -->
-  <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
-    <td mat-cell *matCellDef="let row"> {{row.name}}</td>
-  </ng-container>
-  
-  <!-- Email Column -->
-  <ng-container matColumnDef="email">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
-    <td mat-cell *matCellDef="let row"> {{row.email}} </td>
-  </ng-container>
-  
-  <!-- Phone Column -->
-  <ng-container matColumnDef="phone">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header> Phone </th>
-    <td mat-cell *matCellDef="let row"> {{row.phone}} </td>
-  </ng-container>
-  
-  <!-- Action Column -->
-  <ng-container matColumnDef="action">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
-    <td mat-cell *matCellDef="let row"> 
-      <button (click)="editUser(row)">
-        <i class="pencil alternate icon green"></i>
-      </button>
-      <button (click)="deleteUser(row.id)">
-        <i class="trash icon red"></i>
-      </button>
-    </td>
-  </ng-container>
-  
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-  
-  </table>
-  
-  <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
-
-
     </div>
     <br><br>
 </div>
+
 

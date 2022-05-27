@@ -9,20 +9,28 @@
       "id": 1
     },
     {
-      "name": "stevesmith11",
-      "email": "steve@gmail.com",
-      "phone": 121212121212,
-      "password": "Pass@123",
-      "confirmPassword": "sdssdsdsdss",
-      "id": 2
-    },
-    {
       "name": "josh0032",
       "email": "j@gmail.com",
-      "phone": 3232223232,
+      "phone": 323222323221,
       "password": "Pass@123",
       "confirmPassword": "saasdsad",
       "id": 3
+    },
+    {
+      "name": "testuser112",
+      "email": "test2@GMAIL.COM",
+      "phone": 999999999991,
+      "password": "pASS@123",
+      "confirmPassword": "ADA",
+      "id": 4
+    },
+    {
+      "name": "testuser444",
+      "email": "test@gmail.com",
+      "phone": 4545454545,
+      "password": "Pass@123",
+      "confirmPassword": "sdf",
+      "id": 5
     }
   ],
   "comments": [

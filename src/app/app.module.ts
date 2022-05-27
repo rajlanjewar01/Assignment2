@@ -14,6 +14,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
+import { NewsApiModule } from './news-api/news-api.module';
+import { RegisteredUserComponent } from './registered-user/registered-user.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
@@ -21,6 +26,7 @@ import { MatTableModule } from '@angular/material/table';
     DialogComponent,
     SignInComponent,
     SignUpComponent,
+    RegisteredUserComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +38,10 @@ import { MatTableModule } from '@angular/material/table';
     ReactiveFormsModule, 
     HttpClientModule,
     MatPaginatorModule,
-    MatTableModule
+    MatTableModule,
+    NewsApiModule,
+    MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
