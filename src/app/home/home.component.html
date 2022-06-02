@@ -60,20 +60,34 @@
    <br><br>
    <div class="ui special cards">
     <div class="card" *ngFor="let post of response">
+
       <div class="blurring dimmable image">
         <img src="assets/images/placeholder.png">
       </div>
+
       <div class="content">
         <a class="header">{{ this.post.title }}</a>
         <div class="meta">
           <span class="date">{{ this.post.description }}</span>
         </div>
+
+        <br>
+        <a class="ui label teal" *ngIf="post.visiblity == '1'">
+          <i class="check icon"></i>
+          Published
+        </a>
+        <a class="ui label" *ngIf="post.visiblity == '0'">
+          Saved in Draft
+        </a>
+
       </div>
+
       <div class="extra content">
         <a>
           <i class="calendar alternate outline icon"></i>
           {{ this.post.date | date }}
         </a>
+
         <br><br>
         <div class="ui two buttons">
           <div class="ui basic green button" (click)="editPost(post)">Edit</div>

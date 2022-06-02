@@ -45,7 +45,7 @@
     {
       "title": "Blog 1",
       "description": "blog 1 description",
-      "visiblity": "0",
+      "visiblity": "1",
       "date": "2022-06-10",
       "id": 2
     },
@@ -59,7 +59,7 @@
     {
       "title": "blog 4",
       "description": "ksfhsfjkdsf egesvxc",
-      "visiblity": "1",
+      "visiblity": "0",
       "date": "2022-06-15",
       "id": 5
     }
