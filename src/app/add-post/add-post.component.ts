@@ -25,6 +25,8 @@ export class AddPostComponent implements OnInit {
       this.addPostFrm.controls['description'].setValue(this.editData.description);
       this.addPostFrm.controls['date'].setValue(this.editData.date);
       this.addPostFrm.controls['visiblity'].setValue(this.editData.visiblity);
+      this.addPostFrm.controls['category'].setValue(this.editData.category);
+      this.addPostFrm.controls['imgurl'].setValue(this.editData.imgurl);
     }
   }
 
@@ -36,6 +38,12 @@ export class AddPostComponent implements OnInit {
       Validators.required
     ]),
     visiblity: new FormControl('',[
+      Validators.required
+    ]),
+    category: new FormControl('',[
+      Validators.required
+    ]),
+    imgurl: new  FormControl('', [
       Validators.required
     ]),
     date: new FormControl('',[

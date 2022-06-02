@@ -58,11 +58,11 @@
    -->
 
    <br><br>
-   <div class="ui special cards">
-    <div class="card" *ngFor="let post of response">
+  <div class="ui special cards grid">
+    <div class="card column-three" *ngFor="let post of response">
 
       <div class="blurring dimmable image">
-        <img src="assets/images/placeholder.png">
+        <img src="{{ post.imgurl }}">
       </div>
 
       <div class="content">
@@ -79,7 +79,6 @@
         <a class="ui label" *ngIf="post.visiblity == '0'">
           Saved in Draft
         </a>
-
       </div>
 
       <div class="extra content">
@@ -87,13 +86,13 @@
           <i class="calendar alternate outline icon"></i>
           {{ this.post.date | date }}
         </a>
-
         <br><br>
         <div class="ui two buttons">
           <div class="ui basic green button" (click)="editPost(post)">Edit</div>
           <div class="ui basic red button" (click)="deletePost(post.id)">Delete</div>
         </div>
       </div>
+
     </div>
-    </div>
+  </div>
 

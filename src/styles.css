@@ -5,3 +5,6 @@
 body{
     background-color: #ffeeb6;
 }
+.cdk-global-overlay-wrapper{
+    overflow-y: scroll;
+}

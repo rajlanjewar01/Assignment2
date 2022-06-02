@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
 
   openDialog() {
     this.dialog.open(AddPostComponent,{
-      width: '40%',
+      width: '50%',
     });
   }
 

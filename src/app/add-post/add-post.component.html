@@ -33,6 +33,33 @@
     </div>
 
     <div class="field">
+        <label>Blog Category</label>
+        <select class="ui search dropdown" formControlName="category">
+            <option value="0">-select option-</option>
+            <option value="science and technology">Science & Technology</option>
+            <option value="travel">Travel</option>
+            <option value="food and lifestyle">Food & Lifestyle</option>
+            <option value="photography">Photography</option>
+            <option value="others">Other</option>
+        </select>
+        <ng-container *ngIf="this.addPostFrm.controls?.['category']?.touched">
+            <div class="ui pointing red basic label" *ngIf="this.addPostFrm.controls?.['category']?.errors?.['required']">
+                Please enter a value
+            </div>
+        </ng-container>
+    </div>
+
+    <div class="field">
+        <label>Image URL</label>
+        <input type="text" formControlName="imgurl">
+        <ng-container *ngIf="this.addPostFrm.controls?.['imgurl']?.touched">
+            <div class="ui pointing red basic label" *ngIf="this.addPostFrm.controls?.['imgurl']?.errors?.['required']">
+                Please enter a value
+            </div>
+        </ng-container>
+    </div>
+
+    <div class="field">
         <label>Pick a Date</label>
         <input type="date" formControlName="date">
         <ng-container *ngIf="this.addPostFrm.controls?.['date']?.touched">

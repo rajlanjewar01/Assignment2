@@ -43,32 +43,49 @@
   ],
   "posts": [
     {
-      "title": "Blog 1",
-      "description": "entore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, ",
+      "title": "Turns out, your ideal client does exist. Here's how to find them",
+      "description": "Good clients exist, and there are a lot more than you think. Founder of Fried Cactus Studio Aron Leah explains how to find your ideal client and stop working with assholes. Forever!",
       "visiblity": "1",
-      "date": "2022-06-10",
+      "category": "science and technology",
+      "imgurl": "https://cdn.dribbble.com/users/2109674/screenshots/17664818/media/7c37f51b645572eab1b411a097c841a7.png",
+      "date": "2022-06-02",
+      "id": 1
+    },
+    {
+      "title": "3 key phases for building your personal brand (and why it matters)",
+      "description": "In today’s hyper-competitive market, being good at what you do isn’t enough. Learn how to leverage your personal brand to find new clients and success in your industry.",
+      "visiblity": "1",
+      "category": "science and technology",
+      "imgurl": "https://cdn.dribbble.com/uploads/36841/original/6ae89cb09088534abce4f464c0654710.png?1652291783",
+      "date": "2022-06-02",
       "id": 2
     },
     {
-      "title": "blog 2",
-      "description": "it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      "title": "10 Step Guide To Become A Freelance Designer [Free Resources]",
+      "description": "There’s nothing quite like the thrill of starting your own freelance graphic design business. We’ve compiled a proven 10-step guide to becoming a freelance designer in 2022.",
       "visiblity": "1",
-      "date": "2022-06-16",
+      "category": "science and technology",
+      "imgurl": "https://cdn.dribbble.com/uploads/36620/original/d1a97029ef7d41ac1da38e0324e407eb.png?1651710805",
+      "date": "2022-06-02",
       "id": 3
     },
     {
-      "title": "blog 3",
-      "description": "here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't",
+      "title": "5 ways no-design tools encourage collaboration",
+      "description": "Learn how no-design tools can turbocharge collaboration between designers and non-designers and increase the creative capacity of your creative teams!",
       "visiblity": "0",
-      "date": "2022-06-15",
-      "id": 5
+      "category": "science and technology",
+      "imgurl": "https://cdn.dribbble.com/uploads/36214/original/a0468370dc60e2719356842effd257d1.png?1651004278",
+      "date": "2022-06-02",
+      "id": 4
     },
     {
-      "title": "Blog 4",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled .",
-      "visiblity": "1",
-      "date": "2022-06-09",
-      "id": 6
+      "title": "Cybersecurity 101: A practical guide for freelancers & agencies",
+      "description": "Familiarize yourself with the most common cybercrime threats and how to protect yourself against them before they happen.",
+      "visiblity": "0",
+      "category": "science and technology",
+      "imgurl": "https://cdn.dribbble.com/uploads/35851/original/067618e46869c943fef27523c79b5803.png?1650412217",
+      "date": "2022-06-02",
+      "id": 5
     }
   ]
 }
