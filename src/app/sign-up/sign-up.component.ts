@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-up',
@@ -8,14 +10,14 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class SignUpComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient, private router:Router ) { }
 
   ngOnInit(): void {
   }
 
   signupFrm = new FormGroup({
     name: new FormControl('' ,[
-      Validators.required
+      Validators.required,
     ]),
     email: new FormControl('',[
       Validators.required,
@@ -27,15 +29,23 @@ export class SignUpComponent implements OnInit {
     ]),
     password: new FormControl('',[
       Validators.required,
-      Validators.pattern("^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$")
+      Validators.pattern(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/)
     ]),
     repeatPassword: new FormControl('', [
       Validators.required,
+      Validators.pattern(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/)
     ])
   })
 
   onSubmit(){
-    console.log("submitted");
+    this.http.post<any>("http://localhost:3000/users",this.signupFrm.value)
+    .subscribe(res => {
+      alert("Signup success");
+      this.signupFrm.reset();
+      this.router.navigate(['sign-in']);
+    },err=>{
+      alert("signup fails");
+    })
   }
 
 }

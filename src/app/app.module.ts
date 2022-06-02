@@ -18,6 +18,8 @@ import { NewsApiModule } from './news-api/news-api.module';
 import { RegisteredUserComponent } from './registered-user/registered-user.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { HomeComponent } from './home/home.component';
+import { AddPostComponent } from './add-post/add-post.component';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { MatIconModule } from '@angular/material/icon';
     SignInComponent,
     SignUpComponent,
     RegisteredUserComponent,
+    HomeComponent,
+    AddPostComponent,
   ],
   imports: [
     BrowserModule,

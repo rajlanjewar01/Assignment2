@@ -17,30 +17,51 @@
       "id": 3
     },
     {
-      "name": "testuser112",
-      "email": "test2@GMAIL.COM",
-      "phone": 999999999991,
-      "password": "pASS@123",
-      "confirmPassword": "ADA",
-      "id": 4
-    },
-    {
       "name": "testuser444",
       "email": "test@gmail.com",
       "phone": 4545454545,
       "password": "Pass@123",
       "confirmPassword": "sdf",
       "id": 5
-    }
-  ],
-  "comments": [
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "raj11111",
+      "email": "raj@gmail.com",
+      "phone": 1111111111,
+      "password": "Pass@123",
+      "confirmPassword": "aassasasas",
+      "id": 6
+    },
+    {
+      "name": "josh1234",
+      "email": "josh@outlook.com",
+      "phone": 1212121212,
+      "password": "Pass@123",
+      "confirmPassword": "Pass@123",
+      "id": 7
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "posts": [
+    {
+      "title": "Blog 1",
+      "description": "blog 1 description",
+      "visiblity": "0",
+      "date": "2022-06-10",
+      "id": 2
+    },
+    {
+      "title": "blog 2",
+      "description": "descripriopn",
+      "visiblity": "0",
+      "date": "2022-06-16",
+      "id": 3
+    },
+    {
+      "title": "blog 4",
+      "description": "ksfhsfjkdsf egesvxc",
+      "visiblity": "1",
+      "date": "2022-06-15",
+      "id": 5
+    }
+  ]
 }

@@ -1,14 +1,14 @@
 <div class="ui card">
     <div class="content">
         <h3>Login to your Account</h3>
-        <form class="ui form">
+        <form class="ui form" [formGroup]="signInFrm" (ngSubmit)="onSubmit()">
             <div class="field">
               <label>Email</label>
-              <input type="email">
+              <input type="email" formControlName="email" required="">
             </div>
             <div class="field">
               <label>Password</label>
-              <input type="password">
+              <input type="password" formControlName="password" required="">
             </div>
             <button class="ui button" type="submit">Submit</button>
         </form> 

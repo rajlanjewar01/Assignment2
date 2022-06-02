@@ -1,0 +1,85 @@
+<button class="ui blue submit button" (click)="openDialog()">Add Post</button>
+
+<!-- <mat-form-field appearance="standard">
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+  </mat-form-field>
+  
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" matSort>
+  
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+        <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Title </th>
+        <td mat-cell *matCellDef="let row"> {{row.title}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Description </th>
+        <td mat-cell *matCellDef="let row"> {{row.description}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="visiblity">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Post Visiblity </th>
+        <td mat-cell *matCellDef="let row"> {{row.visiblity}} </td>
+      </ng-container>
+
+        <ng-container matColumnDef="date">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Date added </th>
+          <td mat-cell *matCellDef="let row"> {{row.date}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="action">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
+          <td mat-cell *matCellDef="let row"> 
+            <button mat-button color="primary">
+              <i class="pencil alternate icon"></i>
+            </button>
+            <button mat-button color="warn" style="margin-bottom: 10px;">
+              <i class="trash icon"></i>
+            </button>
+          </td>
+        </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  
+      <tr class="mat-row" *matNoDataRow>
+        <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+      </tr>
+    </table>
+  
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+</div>
+   -->
+
+   <br><br>
+   <div class="ui special cards">
+    <div class="card" *ngFor="let post of response">
+      <div class="blurring dimmable image">
+        <img src="assets/images/placeholder.png">
+      </div>
+      <div class="content">
+        <a class="header">{{ this.post.title }}</a>
+        <div class="meta">
+          <span class="date">{{ this.post.description }}</span>
+        </div>
+      </div>
+      <div class="extra content">
+        <a>
+          <i class="calendar alternate outline icon"></i>
+          {{ this.post.date | date }}
+        </a>
+        <br><br>
+        <div class="ui two buttons">
+          <div class="ui basic green button" (click)="editPost(post)">Edit</div>
+          <div class="ui basic red button" (click)="deletePost(post.id)">Delete</div>
+        </div>
+      </div>
+    </div>
+    </div>
+

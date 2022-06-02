@@ -1,0 +1,46 @@
+<h3>Add new Post</h3>
+<form class="ui form" [formGroup]="addPostFrm" (ngSubmit)="addPost()">
+    <div class="field">
+      <label>Post Title</label>
+      <input type="text" formControlName="title">
+      <ng-container *ngIf="this.addPostFrm.controls?.['title']?.touched">
+        <div class="ui pointing red basic label" *ngIf="this.addPostFrm.controls?.['title']?.errors?.['required']">
+            Please enter a value
+        </div>
+      </ng-container>
+    </div>
+    <div class="field">
+        <label>Description</label>
+        <textarea formControlName="description"></textarea>
+        <ng-container *ngIf="this.addPostFrm.controls?.['description']?.touched">
+            <div class="ui pointing red basic label" *ngIf="this.addPostFrm.controls?.['description']?.errors?.['required']">
+                Please enter a value
+            </div>
+        </ng-container>
+    </div>
+
+    <div class="field">
+        <label>Please select</label>
+        <select class="ui search dropdown" formControlName="visiblity">
+            <option value="0">Save to Draft</option>
+            <option value="1">Publish now</option>
+        </select>
+        <ng-container *ngIf="this.addPostFrm.controls?.['visiblity']?.touched">
+            <div class="ui pointing red basic label" *ngIf="this.addPostFrm.controls?.['visiblity']?.errors?.['required']">
+                Please enter a value
+            </div>
+        </ng-container>
+    </div>
+
+    <div class="field">
+        <label>Pick a Date</label>
+        <input type="date" formControlName="date">
+        <ng-container *ngIf="this.addPostFrm.controls?.['date']?.touched">
+            <div class="ui pointing red basic label" *ngIf="this.addPostFrm.controls?.['date']?.errors?.['required']">
+                Please enter a value
+            </div>
+        </ng-container>
+    </div>
+
+    <button class="ui button" type="submit" [disabled]="this.addPostFrm.invalid">{{ actionBtn }}</button>
+</form>
