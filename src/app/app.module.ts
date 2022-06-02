@@ -20,6 +20,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { HomeComponent } from './home/home.component';
 import { AddPostComponent } from './add-post/add-post.component';
+import { PublishedPostComponent } from './published-post/published-post.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { AddPostComponent } from './add-post/add-post.component';
     RegisteredUserComponent,
     HomeComponent,
     AddPostComponent,
+    PublishedPostComponent,
   ],
   imports: [
     BrowserModule,
